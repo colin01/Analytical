@@ -37,12 +37,12 @@ function getvideo($id){
 	return $urllist;
 }
 function getSid() {
-    $sid = time().(rand(0,9000)+10000);
-    return $sid;
+     $sid = time().(mt_rand(0,9000)+10000);
+     return $sid;
 }
 function getkey($key1,$key2){
     $a = hexdec($key1);
-    $b = $a ^ 0xA55AA5A5;
+    $b = $a ^0xA55AA5A5;
     $b = dechex($b);
     return $key2.$b;
 }
