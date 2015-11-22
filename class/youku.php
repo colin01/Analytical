@@ -1,6 +1,6 @@
 <?php
 function getvideo($id){
-	$content=get_curl_contents('http://v.youku.com/player/getPlayList/VideoIDS/'.$id);
+	$content=get_curl_contents('http://v.youku.com/player/getPlaylist/VideoIDS/'.$id);
 	$data=json_decode($content);
 	$fileid_=$data->data[0]->streamfileids;
 	$fileid2_=$fileid_->hd2;
