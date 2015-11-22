@@ -29,7 +29,7 @@ function getvideo($id){
 		$size=$v1->size;
 		$seconds=$v1->seconds;
 		$sk=str_replace('hd2','flv',$sk);
-		$urllist[$seg1]['url'] = 'http://f.youku.com/player/getFlvPath/sid/00_00/st/'.$sk.'/fileid/'.$filed_.'?K='.$k1.',k2='.$k2;
+		$urllist[$seg1]['url'] = 'k.youku.com/player/getFlvPath/sid/_00/st/'.$sk.'/fileid/'.$filed_.'?K='.$k1.',k2='.$k2;
 		$urllist[$seg1]['size'] = $size;
 		$urllist[$seg1]['sec'] = $seconds;
 		$i+=1;
